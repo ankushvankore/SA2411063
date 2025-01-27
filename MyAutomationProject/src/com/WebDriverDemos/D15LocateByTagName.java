@@ -21,6 +21,15 @@ public class D15LocateByTagName {
 		//get() is used to read any specific element from the list.
 		//allLinks.get(0).getText();
 		
+		//System.out.println(allLinks.get(0).getText());
+		//System.out.println(allLinks.get(1).getText());
+		
+		//for(int i = 0; i < allLinks.size(); i++)
+			//System.out.println(allLinks.get(i).getText());
+		
+		for(WebElement l : allLinks)
+			System.out.println(l.getText());
+		
 		driver.close();
 	}
 
