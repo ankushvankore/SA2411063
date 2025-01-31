@@ -1,5 +1,7 @@
 package com.Assignments;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,6 +13,7 @@ public class A04RedBusAssignment {
 		driver.manage().window().maximize();
 
 		driver.get("https://www.redbus.in/");
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		
 		//Source City
 		driver.findElement(By.id("src")).sendKeys("Kolh");
