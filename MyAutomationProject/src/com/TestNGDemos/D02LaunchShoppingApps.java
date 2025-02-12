@@ -19,12 +19,12 @@ public class D02LaunchShoppingApps {
 		driver.close();
 	}
 	@Test (priority = 2)
-	public void testAmazon() {
+	public void testFlipkart() {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-		driver.get("https://www.amazon.in/");
+		driver.get("https://www.flipkart.com/");
 		System.out.println("Title: " + driver.getTitle());
 
 		driver.close();

@@ -68,7 +68,8 @@ public class A01EchotrackLogin_ClassName {
 		 * System.out.println("Slider location: " + slider.getLocation());
 		 * act.dragAndDropBy(slider,
 		 * slider.getLocation().x+800,slider.getLocation().y).perform();
-		 */WebDriver driver = new ChromeDriver();
+		 */
+		/*WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://asana.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -80,7 +81,39 @@ public class A01EchotrackLogin_ClassName {
 		a.moveToElement(ele).perform();
 		driver.findElement(By.xpath("//button[@data-backend-test-id=\"close-button\"]")).click();
 		driver.findElement(By.xpath("//span[text()=\"Log In\"]")).click();
+*/
+		/*WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://asana.com/");
+		
+		//JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		//WebElement loginLink = driver.findElement(By.xpath("//*[@id=\"__next\"]/div/header/nav/div/div[2]/div/div[1]/a[2]/span[1]"));
+		
+		//js.executeScript("arguments[0].click()", loginLink);
+		
+		driver.switchTo().frame(driver.findElement(By.id("q-messenger-frame")));
+		//driver.switchTo().frame(0);
+		
+		Actions act = new Actions(driver);
+		act.moveToElement(driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div/span/div/div[1]/div/div/button"))).click().perform();
+		
+		driver.findElement(By.xpath("//*[@id=\"__next\"]/div/header/nav/div/div[2]/div/div[1]/a[2]/span[1]")).click();
+		
+		Thread.sleep(5000);
+		//driver.close();*/
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		WebElement username= driver.findElement(By.name("username"));
+		username.sendKeys("Admin");
+		driver.findElement(By.name("password")).sendKeys("admin123");
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		}
 
-	}
+	
 
 }
