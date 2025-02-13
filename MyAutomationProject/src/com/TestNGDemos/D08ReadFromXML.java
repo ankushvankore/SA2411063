@@ -30,7 +30,7 @@ public class D08ReadFromXML {
 
 	@BeforeTest
 	public void beforeTest() {
-		System.setProperty("webdriver.chrome.driver", null)
+		//System.setProperty("webdriver.chrome.driver", null)
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

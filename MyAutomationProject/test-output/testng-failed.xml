@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [My Suite]">
-  <test thread-count="5" name="MyTest(failed)">
-    <groups>
-      <run>
-        <include name="Sell"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNGDemos.D05AmazonAssignment">
+      <class name="com.TestNGDemos.D10PracticeTest_Client">
         <methods>
-          <include name="printTitle"/>
-          <include name="testBestSellerLink"/>
-          <include name="testSellLink"/>
-          <include name="openAmaozn"/>
-          <include name="launchBrowser"/>
-          <include name="closeBrowser"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="loginLogout"/>
         </methods>
-      </class> <!-- com.TestNGDemos.D05AmazonAssignment -->
+      </class> <!-- com.TestNGDemos.D10PracticeTest_Client -->
     </classes>
-  </test> <!-- MyTest(failed) -->
-</suite> <!-- Failed suite [My Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
