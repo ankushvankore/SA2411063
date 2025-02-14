@@ -13,9 +13,19 @@ public class D10PracticeTest_Client {
 	WebDriver driver;
 	PracticeTestUtilityClass p1;
 	@Test
-	public void loginLogout() {
+	public void loginLogout1() {
 		p1.setUserName("practice");
 		p1.setPassword("SuperSecretPassword!");
+		p1.clickOnLoginBtn();
+		
+		System.out.println(p1.getMessage());
+		
+		p1.logout();
+	}
+	@Test
+	public void loginLogout2() {
+		p1.setUserName("malathi");
+		p1.setPassword("Password!");
 		p1.clickOnLoginBtn();
 		
 		System.out.println(p1.getMessage());

@@ -23,7 +23,7 @@ public class PracticeTestUtilityClass {
 	
 	public void setUserName(String un)
 	{
-		js.executeScript("window.scrollBy(0, 200)", "");
+		js.executeScript("window.scrollBy(0, 400)", "");
 		//driver.findElement(By.id("username")).sendKeys(un);
 		userName.sendKeys(un);
 	}
@@ -38,11 +38,17 @@ public class PracticeTestUtilityClass {
 	}
 	public String getMessage()
 	{
-		return(driver.findElement(By.xpath("//*[@id=\"flash\"]/b")).getText());
+		if(driver.getCurrentUrl().contains("secure"))
+			return(driver.findElement(By.xpath("//*[@id=\"flash\"]/b")).getText());
+		else
+			return ("Invalid data");
 	}
 	public void logout()
 	{
+		js.executeScript("window.scrollBy(0, 200)", "");
 		if(driver.getCurrentUrl().contains("secure"))
 			driver.findElement(By.linkText("Logout")).click();
+		else
+			System.out.println("Invalid user name/password");
 	}
 }
