@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNGDemos.D15LoginToOHRM_DDF">
+      <class name="com.Assignments.A09ReadingNumbersFromExcel">
         <methods>
-          <include name="loginToOHROM"/>
-          <include name="afterTest"/>
+          <include name="readData"/>
           <include name="beforeTest"/>
-          <include name="afterMethod"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- com.TestNGDemos.D15LoginToOHRM_DDF -->
+      </class> <!-- com.Assignments.A09ReadingNumbersFromExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
