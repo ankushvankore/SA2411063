@@ -1,19 +1,21 @@
 package com.Assignments;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class A04RedBusAssignment {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
 		driver.get("https://www.redbus.in/");
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		//Source City
 		driver.findElement(By.id("src")).sendKeys("Kolh");
@@ -32,8 +34,16 @@ public class A04RedBusAssignment {
 		
 		//Display Result
 		//System.out.println(driver.findElement(By.xpath("//*[@id=\"8331995\"]/div[1]/div/div[1]/div[1]/div[1]/div[1]")).getText());
-		String bus = driver.findElement(By.xpath("//*[@id=\"8331995\"]/div[1]/div/div[1]/div[1]/div[1]/div[1]")).getText();
-		System.out.println(bus);
+		//String bus = driver.findElement(By.xpath("//*[@id=\"8331995\"]/div[1]/div/div[1]/div[1]/div[1]/div[1]")).getText();
+		//System.out.println(bus);
+		
+		Thread.sleep(10000);
+		
+		System.out.println(driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[1]/span[1]/span")).getText());
+		
+		List<WebElement>buses = driver.findElements(By.xpath("/html/body/section/div/div/div/div/div/div/div/div/ul/div/li/div/div/div/div/div[1]/div[1]"));
+		for(WebElement b : buses)
+			System.out.println(b.getText());
 		
 		driver.close();
 	}

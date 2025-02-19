@@ -11,10 +11,10 @@ public class D29HeadlessBrowser {
 
 	public static void main(String[] args) throws InterruptedException {
 		ChromeOptions op = new ChromeOptions();
-		//op.addArguments("--headless");
-		op.addArguments("start-maximized");
+		op.addArguments("--headless");
+		//op.addArguments("start-maximized");
 		WebDriver driver = new ChromeDriver(op);
-		//driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		driver.get("https://dash.bling-center.com/platform/signIn.html");
