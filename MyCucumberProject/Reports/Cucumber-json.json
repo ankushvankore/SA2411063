@@ -1,0 +1,305 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4025546600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Launch \"https://www.nykaa.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.nykaa.com/\"",
+                  "offset": 7
+                }
+              ],
+              "location": "com.StepDef.S04NykaaLinks.launch(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-21T15:50:40.722Z",
+        "line": 8,
+        "name": "Test Makeup Link",
+        "description": "",
+        "id": "validate-links-on-nykaa;test-makeup-link",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2532043600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on Makeup Link",
+            "match": {
+              "location": "com.StepDef.S04NykaaLinks.click_on_makeup_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat com.StepDef.S04NykaaLinks.makeup_page_should_display(S04NykaaLinks.java:46)\r\n\tat ✽.Makeup page should display(file:///D:/StarAgile/Demos/SA2411063/MyCucumberProject/src/test/resources/MyCucumberProject/MyCucumberProject/F04NykaaLinks.feature:10)\r\n",
+              "duration": 2481199500,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "Makeup page should display",
+            "match": {
+              "location": "com.StepDef.S04NykaaLinks.makeup_page_should_display()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllLinks"
+          },
+          {
+            "name": "@Makeup"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4794877100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Launch \"https://www.nykaa.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.nykaa.com/\"",
+                  "offset": 7
+                }
+              ],
+              "location": "com.StepDef.S04NykaaLinks.launch(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-21T15:50:50.006Z",
+        "line": 13,
+        "name": "Test Skin Link",
+        "description": "",
+        "id": "validate-links-on-nykaa;test-skin-link",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1669819700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Click on Skin Link",
+            "match": {
+              "location": "com.StepDef.S04NykaaLinks.click_on_skin_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat com.StepDef.S04NykaaLinks.skin_page_should_display(S04NykaaLinks.java:64)\r\n\tat ✽.Skin Page should display(file:///D:/StarAgile/Demos/SA2411063/MyCucumberProject/src/test/resources/MyCucumberProject/MyCucumberProject/F04NykaaLinks.feature:15)\r\n",
+              "duration": 6033470200,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "Skin Page should display",
+            "match": {
+              "location": "com.StepDef.S04NykaaLinks.skin_page_should_display()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllLinks"
+          },
+          {
+            "name": "@Skin"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5756469200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Launch \"https://www.nykaa.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.nykaa.com/\"",
+                  "offset": 7
+                }
+              ],
+              "location": "com.StepDef.S04NykaaLinks.launch(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-21T15:51:02.529Z",
+        "line": 18,
+        "name": "Test Mom and Baby link",
+        "description": "",
+        "id": "validate-links-on-nykaa;test-mom-and-baby-link",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1619306300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click on Mom and Baby link",
+            "match": {
+              "location": "com.StepDef.S04NykaaLinks.click_on_mom_and_baby_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat com.StepDef.S04NykaaLinks.mom_and_baby_page_should_display(S04NykaaLinks.java:82)\r\n\tat ✽.Mom and Baby page should display(file:///D:/StarAgile/Demos/SA2411063/MyCucumberProject/src/test/resources/MyCucumberProject/MyCucumberProject/F04NykaaLinks.feature:20)\r\n",
+              "duration": 8380016900,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "Mom and Baby page should display",
+            "match": {
+              "location": "com.StepDef.S04NykaaLinks.mom_and_baby_page_should_display()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllLinks"
+          },
+          {
+            "name": "@MomBaby"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4843138100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Launch \"https://www.nykaa.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.nykaa.com/\"",
+                  "offset": 7
+                }
+              ],
+              "location": "com.StepDef.S04NykaaLinks.launch(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-21T15:51:18.325Z",
+        "line": 23,
+        "name": "Test Men Link",
+        "description": "",
+        "id": "validate-links-on-nykaa;test-men-link",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1877194900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Click on Men link",
+            "match": {
+              "location": "com.StepDef.S04NykaaLinks.click_on_men_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5958686900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Men page should display",
+            "match": {
+              "location": "com.StepDef.S04NykaaLinks.men_page_should_display()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllLinks"
+          },
+          {
+            "name": "@Men"
+          }
+        ]
+      }
+    ],
+    "name": "Validate Links on Nykaa",
+    "description": "",
+    "id": "validate-links-on-nykaa",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/MyCucumberProject/MyCucumberProject/F04NykaaLinks.feature",
+    "tags": [
+      {
+        "name": "@AllLinks",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

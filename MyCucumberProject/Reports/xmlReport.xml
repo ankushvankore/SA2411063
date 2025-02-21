@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="50.883">
+    <testcase classname="Validate Links on Nykaa" name="Test Makeup Link" time="9.221">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[Given Launch "https://www.nykaa.com/".......................................passed
+When Click on Makeup Link...................................................passed
+Then Makeup page should display.............................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.StepDef.S04NykaaLinks.makeup_page_should_display(S04NykaaLinks.java:46)
+	at ✽.Makeup page should display(file:///D:/StarAgile/Demos/SA2411063/MyCucumberProject/src/test/resources/MyCucumberProject/MyCucumberProject/F04NykaaLinks.feature:10)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Validate Links on Nykaa" name="Test Skin Link" time="12.5">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[Given Launch "https://www.nykaa.com/".......................................passed
+When Click on Skin Link.....................................................passed
+Then Skin Page should display...............................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.StepDef.S04NykaaLinks.skin_page_should_display(S04NykaaLinks.java:64)
+	at ✽.Skin Page should display(file:///D:/StarAgile/Demos/SA2411063/MyCucumberProject/src/test/resources/MyCucumberProject/MyCucumberProject/F04NykaaLinks.feature:15)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Validate Links on Nykaa" name="Test Mom and Baby link" time="15.772">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[Given Launch "https://www.nykaa.com/".......................................passed
+When Click on Mom and Baby link.............................................passed
+Then Mom and Baby page should display.......................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.StepDef.S04NykaaLinks.mom_and_baby_page_should_display(S04NykaaLinks.java:82)
+	at ✽.Mom and Baby page should display(file:///D:/StarAgile/Demos/SA2411063/MyCucumberProject/src/test/resources/MyCucumberProject/MyCucumberProject/F04NykaaLinks.feature:20)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Validate Links on Nykaa" name="Test Men Link" time="12.682">
+        <system-out>
+            <![CDATA[Given Launch "https://www.nykaa.com/".......................................passed
+When Click on Men link......................................................passed
+Then Men page should display................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
